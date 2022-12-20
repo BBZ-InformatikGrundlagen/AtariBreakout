@@ -1,5 +1,0 @@
-# Projektideen
-
-* Pong
-* Tetris
-* Tamagochi
