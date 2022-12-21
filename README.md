@@ -54,13 +54,13 @@ See the [open issues](https://github.com/NaegeliJ/MicroBit_Projekt/issues) for a
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-[contributors-shield]: https://img.shields.io/github/contributors/NaegeliJ/MicroBit_Projekt.svg?style=for-the-badge
-[contributors-url]: https://github.com/NaegeliJ/MicroBit_Projekt/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NaegeliJ/MicroBit_Projekt.svg?style=for-the-badge
-[forks-url]: https://github.com/NaegeliJ/MicroBit_Projekt/network/members
-[stars-shield]: https://img.shields.io/github/stars/NaegeliJ/MicroBit_Projekt.svg?style=for-the-badge
-[stars-url]: https://github.com/NaegeliJ/MicroBit_Projekt/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NaegeliJ/MicroBit_Projekt.svg?style=for-the-badge
-[issues-url]: https://github.com/NaegeliJ/MicroBit_Projekt/issues
-[license-shield]: https://img.shields.io/github/license/NaegeliJ/MicroBit_Projekt.svg?style=for-the-badge
-[license-url]: https://github.com/NaegeliJ/MicroBit_Projekt/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/BBZ-InformatikGrundlagen/AtariBreakout.svg?style=for-the-badge
+[contributors-url]: https://github.com/BBZ-InformatikGrundlagen/AtariBreakout/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/BBZ-InformatikGrundlagen/AtariBreakout.svg?style=for-the-badge
+[forks-url]: https://github.com/BBZ-InformatikGrundlagen/AtariBreakout/network/members
+[stars-shield]: https://img.shields.io/github/stars/BBZ-InformatikGrundlagen/AtariBreakout.svg?style=for-the-badge
+[stars-url]: https://github.com/BBZ-InformatikGrundlagen/AtariBreakout/stargazers
+[issues-shield]: https://img.shields.io/github/issues/BBZ-InformatikGrundlagen/AtariBreakout.svg?style=for-the-badge
+[issues-url]: https://github.com/BBZ-InformatikGrundlagen/AtariBreakout/issues
+[license-shield]: https://img.shields.io/github/license/BBZ-InformatikGrundlagen/AtariBreakout.svg?style=for-the-badge
+[license-url]: https://github.com/BBZ-InformatikGrundlagen/AtariBreakout/LICENSE.txt
