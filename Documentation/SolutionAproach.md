@@ -1,13 +1,13 @@
 # Solution Aproach
 
- ## External Display
+## External Display
 We wanted to use a external Display to show the Game. So our first aproach was to source a suitable Display with a I2C or SPI Interface. Our intial plan was as follows:
   * Organise a Display with I2C or SPI interface.
   * Implement Libraries to Setup the Display.
   * Write Testcode to verify the Function of the Display.
   * Learn about the Capabilities and Limitaions of the Display.
 
-## Game Code
+## Game Code Plan
 We planned on implementing the Game Code as follows:
   * Setup and Test Basic Functions of the MicroBit.
   * Setup Event Handler for Asynchronos Button presses.
@@ -21,11 +21,23 @@ We planned on implementing the Game Code as follows:
   * Add Animations.
   * Add Levels
 
-## Internal Display
-Unfortunately, we were unable to get the external display working for our project. The issue was with the SPI interface, which we were unable to properly configure for communication with the external display. Another Group was able to get it working but unfortunatly we where running out of time and had to resort to using the built-in 5x5 LED matrix as an alternative.
+## Using a external Display
+We where able to get a hold of a 128x128 1.44inch RGB TFT LCD Display with a SPI Interface.
 
-Note:
-This solution has a limited resolution of 5x5 pixels, so the game is not very detailed. We had to remove the Bricks from the Display because there wasn't any space on the Display to properly show them.
+The Lancaster University Runtime states that it support SPI. The SPI on the micro:bit is supported in the micro:bit runtime through the ARM mbed SPI class. However, by design, this is this is not initialised by default as part of the uBit object.
+
+They recomend to instantiate a instance of SPI, using the mbed SPI class:
+``` cpp
+SPI spi(MOSI, MISO, SCK);
+```
+Unfortunatly after many tries it seems to us that the Hardware SPI Interface is not proberly set up in the Lancaster Runtime. 
+We have also talked with a other Project Group which had the same Problem. Because of a  lack of Documentation we weren't able to resolve this issue. It is possible to set up a Software Defined SPI Interface. After some Dicussion we decided to use the built-in 5x5 LED Matrix  because of time constraints.
+
+## Internal Display
+This solution has a limited resolution of 5x5 pixels, so the game is not very detailed. We had to remove the Bricks from the Display because there wasn't any space on the Display to properly show them. The Plan for implement the Display changed as follows:
+  * Familiarizing ourself with the LED matrix of the microbit with help of the documentation
+  * Testing built-in functions.
+  * Integrate the LED matrix into the game.
 
 # Programm explanation
 See `./Source/main.cpp` for the Source Code.
@@ -97,7 +109,13 @@ Using this Function we can Delay the Programm of the Microbit. If this Functions
 
 # Game Code
 ## Global Varibles
-Some Varibles are declared as Globle Varibles such as: `int bar_x;int bar_x2;bool in_game;` This has to be done so we can use those Varibles in other Functions such as `onButtonA / onButtonB`.
+``` cpp
+int bar_x; 
+int bar_x2;
+bool in_game;
+```
+
+Some Varibles are declared as Globle Varibles. This has to be done so we can use those Varibles in other Functions such as `onButtonA` and `onButtonB`.
 
 ## Moving the Ball
 ``` cpp
